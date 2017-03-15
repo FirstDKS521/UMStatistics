@@ -13,6 +13,10 @@
 		61DC5E2E1E78E5E500AAB896 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61DC5E2C1E78E5E500AAB896 /* LaunchScreen.storyboard */; };
 		61DC5E391E78E5E500AAB896 /* UMStatisticsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61DC5E381E78E5E500AAB896 /* UMStatisticsTests.m */; };
 		61DC5E441E78E5E500AAB896 /* UMStatisticsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61DC5E431E78E5E500AAB896 /* UMStatisticsUITests.m */; };
+		61DC5E541E78E60500AAB896 /* RuntimeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 61DC5E531E78E60500AAB896 /* RuntimeKit.m */; };
+		61DC5E581E78E60C00AAB896 /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61DC5E571E78E60C00AAB896 /* UMMobClick.framework */; };
+		61DC5E5B1E78E61500AAB896 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61DC5E5A1E78E61500AAB896 /* RootViewController.m */; };
+		61DC5E5E1E78E61C00AAB896 /* UIViewController+UMTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 61DC5E5D1E78E61C00AAB896 /* UIViewController+UMTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,13 @@
 		61DC5E3F1E78E5E500AAB896 /* UMStatisticsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UMStatisticsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61DC5E431E78E5E500AAB896 /* UMStatisticsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMStatisticsUITests.m; sourceTree = "<group>"; };
 		61DC5E451E78E5E500AAB896 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61DC5E521E78E60500AAB896 /* RuntimeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeKit.h; sourceTree = "<group>"; };
+		61DC5E531E78E60500AAB896 /* RuntimeKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeKit.m; sourceTree = "<group>"; };
+		61DC5E571E78E60C00AAB896 /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
+		61DC5E591E78E61500AAB896 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		61DC5E5A1E78E61500AAB896 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		61DC5E5C1E78E61C00AAB896 /* UIViewController+UMTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+UMTool.h"; sourceTree = "<group>"; };
+		61DC5E5D1E78E61C00AAB896 /* UIViewController+UMTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+UMTool.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61DC5E581E78E60C00AAB896 /* UMMobClick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,8 +108,14 @@
 		61DC5E231E78E5E500AAB896 /* UMStatistics */ = {
 			isa = PBXGroup;
 			children = (
+				61DC5E551E78E60C00AAB896 /* UMengAnalytics */,
+				61DC5E511E78E60500AAB896 /* Runtime */,
 				61DC5E271E78E5E500AAB896 /* AppDelegate.h */,
 				61DC5E281E78E5E500AAB896 /* AppDelegate.m */,
+				61DC5E591E78E61500AAB896 /* RootViewController.h */,
+				61DC5E5A1E78E61500AAB896 /* RootViewController.m */,
+				61DC5E5C1E78E61C00AAB896 /* UIViewController+UMTool.h */,
+				61DC5E5D1E78E61C00AAB896 /* UIViewController+UMTool.m */,
 				61DC5E2A1E78E5E500AAB896 /* Assets.xcassets */,
 				61DC5E2C1E78E5E500AAB896 /* LaunchScreen.storyboard */,
 				61DC5E2F1E78E5E500AAB896 /* Info.plist */,
@@ -130,6 +148,31 @@
 				61DC5E451E78E5E500AAB896 /* Info.plist */,
 			);
 			path = UMStatisticsUITests;
+			sourceTree = "<group>";
+		};
+		61DC5E511E78E60500AAB896 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				61DC5E521E78E60500AAB896 /* RuntimeKit.h */,
+				61DC5E531E78E60500AAB896 /* RuntimeKit.m */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		61DC5E551E78E60C00AAB896 /* UMengAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				61DC5E561E78E60C00AAB896 /* umsdk_IOS_analyics_idfa_v4.1.4 */,
+			);
+			path = UMengAnalytics;
+			sourceTree = "<group>";
+		};
+		61DC5E561E78E60C00AAB896 /* umsdk_IOS_analyics_idfa_v4.1.4 */ = {
+			isa = PBXGroup;
+			children = (
+				61DC5E571E78E60C00AAB896 /* UMMobClick.framework */,
+			);
+			path = umsdk_IOS_analyics_idfa_v4.1.4;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,7 +310,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61DC5E5E1E78E61C00AAB896 /* UIViewController+UMTool.m in Sources */,
+				61DC5E541E78E60500AAB896 /* RuntimeKit.m in Sources */,
 				61DC5E291E78E5E500AAB896 /* AppDelegate.m in Sources */,
+				61DC5E5B1E78E61500AAB896 /* RootViewController.m in Sources */,
 				61DC5E261E78E5E500AAB896 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,6 +456,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X42645MK9G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UMStatistics/UMengAnalytics/umsdk_IOS_analyics_idfa_v4.1.4",
+				);
 				INFOPLIST_FILE = UMStatistics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.robooot.UMStatistics;
@@ -422,6 +472,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X42645MK9G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UMStatistics/UMengAnalytics/umsdk_IOS_analyics_idfa_v4.1.4",
+				);
 				INFOPLIST_FILE = UMStatistics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.robooot.UMStatistics;
